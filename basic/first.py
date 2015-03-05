@@ -5,7 +5,7 @@ print ("hello python")
 #name = raw_input()
 # print ("name ="),(name)
 
-
+# string
 word="abcdefg"
 a=word[2]
 print "a is: "+a
@@ -28,21 +28,32 @@ print "i is: "+i # Everything except the last two characters
 l=len(word)
 print "Length of word is: "+ str(l)
 
-
+#List
 Word=['a','b','c','d','e','f','g']
 print (Word)
 Word.append('hehe')
 print (Word)
 
+#loop List
 for x in Word:
     print x, len(x)
 
+#function
 def sum(a, b):
     return a + b
 
 func = sum
 res = func(1, 2)
 print ("function sum return:"),(res)
+
+# Defines function with default argument
+def add(a,b=2):
+    return a+b
+r=add(1)
+print r
+r=add(1,5)
+print r
+
 
 # The range() function
 ranA =range(5,10)
@@ -55,7 +66,7 @@ ranA = range(-2,-11,-3) # The 3rd parameter stands for step
 print ranA
 
 
-
+#file
 spath="D:\python\in.txt"
 f=open(spath,"w") # Opens file for writing.Creates this file doesn't exist.
 f.write("First line 1.\n")
@@ -69,6 +80,7 @@ for line in f:
 f.close()
 
 
+#exception
 s=raw_input("Input your age:")
 if s =="":
     raise Exception("Input must no be empty.")
@@ -85,6 +97,7 @@ finally: # Clean up action
     print "Goodbye!"
 
 
+#class
 class Base:
     def __init__(self):
         self.data = []
@@ -103,5 +116,6 @@ oChild =Child()
 oChild.add("str1")
 print oChild.data
 print oChild.plus(2,3)
+
 
 raw_input("Press enter key to close this window")
