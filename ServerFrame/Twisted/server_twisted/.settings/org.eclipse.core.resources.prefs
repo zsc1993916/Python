@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/charUtils.py=utf-8
+encoding//src/circularBuffer.py=utf-8
+encoding//src/connectionManager.py=utf-8
+encoding//src/factory.py=utf-8
+encoding//src/protocol.py=utf-8
